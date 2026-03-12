@@ -3,57 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Muhammad Iqbal, PMP® — Program Management | Infrastructure & Telecom Networks Modernization | PMO Governance</title>
-  <meta name="description" content="Muhammad Iqbal, PMP®. 30+ years of experience in program management, infrastructure, telecom, managed services, PMO governance, and digital consultancy.">
+  <title>Muhammad Iqbal, PMP® — Program Management | Infrastructure & Telecom Networks Modernization</title>
+  <meta name="description" content="Muhammad Iqbal, PMP®. 30+ years of experience in program management, infrastructure, telecom, managed services, PMO governance, and digital consultancy. Riyadh, Saudi Arabia.">
+  <meta property="og:title" content="Muhammad Iqbal, PMP® — Program Management Leader">
+  <meta property="og:description" content="30+ years driving infrastructure, telecom, and digital transformation across the Middle East.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- LOADER -->
 <div id="loader">
-  <div class="ld-bg-grid"></div>
-  <div class="ld-content">
-    <svg class="ld-logo" viewBox="0 0 200 130" fill="none">
-      <path class="ld-path-m" d="M10 110 L10 20 L55 85 L100 20 L100 110" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path class="ld-path-i" d="M130 20 L130 110" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
-      <path class="ld-path-t1" d="M122 20 L138 20" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
-      <path class="ld-path-t2" d="M122 110 L138 110" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
-      <line class="ld-scan" x1="10" y1="125" x2="10" y2="125" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-    </svg>
-    <div class="ld-info">
-      <span class="ld-pct" id="ldPct">0</span>
-      <span class="ld-sep">%</span>
+  <div class="ld-inner">
+    <div class="ld-mono">
+      <svg viewBox="0 0 160 80" class="ld-svg">
+        <text x="8" y="72" class="ld-m">M</text>
+        <text x="90" y="72" class="ld-i">I</text>
+        <line class="ld-scan-line" x1="0" y1="78" x2="0" y2="78"/>
+      </svg>
     </div>
-    <div class="ld-track"><div class="ld-fill" id="ldFill"></div></div>
-    <p class="ld-label">Loading Portfolio</p>
+    <div class="ld-bar-wrap">
+      <div class="ld-bar-fill" id="ldFill"></div>
+    </div>
+    <div class="ld-pct-wrap"><span id="ldPct">0</span><span class="ld-pct-sym">%</span></div>
+    <p class="ld-label">Initializing Portfolio</p>
   </div>
 </div>
 
+<!-- CURSOR -->
 <div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
 <div id="cursor-glow"></div>
-<div id="trailWrap"></div>
 
-<canvas id="bg-canvas"></canvas>
-<div id="scroll-bar"></div>
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
 
-<nav class="section-dots" id="sectionDots">
-  <a href="#hero" class="sd-dot active" data-label="Home" title="Home"></a>
-  <a href="#about" class="sd-dot" data-label="About" title="About"></a>
-  <a href="#experience" class="sd-dot" data-label="Career" title="Career"></a>
-  <a href="#achievements" class="sd-dot" data-label="Achievements" title="Achievements"></a>
-  <a href="#projects" class="sd-dot" data-label="Projects" title="Projects"></a>
-  <a href="#certs" class="sd-dot" data-label="Courses" title="Courses"></a>
-  <a href="#awards" class="sd-dot" data-label="Awards" title="Awards"></a>
-  <a href="#contact" class="sd-dot" data-label="Contact" title="Contact"></a>
+<!-- SECTION DOTS -->
+<nav class="section-dots" id="sectionDots" aria-label="Page sections">
+  <a href="#hero"         class="sd active" data-tip="Home"          title="Home"></a>
+  <a href="#about"        class="sd"         data-tip="About"         title="About"></a>
+  <a href="#experience"   class="sd"         data-tip="Career"        title="Career"></a>
+  <a href="#achievements" class="sd"         data-tip="Achievements"  title="Achievements"></a>
+  <a href="#projects"     class="sd"         data-tip="Projects"      title="Projects"></a>
+  <a href="#certs"        class="sd"         data-tip="Courses"       title="Courses"></a>
+  <a href="#awards"       class="sd"         data-tip="Awards"        title="Awards"></a>
+  <a href="#contact"      class="sd"         data-tip="Contact"       title="Contact"></a>
 </nav>
 
-<nav id="nav">
-  <a href="#hero" class="nav-brand">
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-brand" aria-label="Muhammad Iqbal home">
     <span class="nb-m">M</span><span class="nb-dot">·</span><span class="nb-i">I</span>
   </a>
-  <ul class="nav-links" id="navLinks">
+  <ul class="nav-links" id="navLinks" role="list">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Career</a></li>
     <li><a href="#achievements">Achievements</a></li>
@@ -63,140 +68,165 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-end">
-    <a href="mailto:ikbalmalic@gmail.com" class="nav-hire magnetic">
-      <span class="nh-text">Contact</span>
-      <span class="nh-icon">↗</span>
+    <a href="mailto:m.owais.iqbal@gmail.com" class="nav-hire" aria-label="Contact Muhammad Iqbal">
+      <span>Hire Me</span><span class="nh-arrow">↗</span>
     </a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<div class="drawer" id="drawer">
-  <div class="drawer-inner">
-    <a href="#about" class="drawer-link">About</a>
-    <a href="#experience" class="drawer-link">Career</a>
-    <a href="#achievements" class="drawer-link">Achievements</a>
-    <a href="#projects" class="drawer-link">Projects</a>
-    <a href="#certs" class="drawer-link">Courses</a>
-    <a href="#awards" class="drawer-link">Awards</a>
-    <a href="#contact" class="drawer-link">Contact</a>
-    <div class="drawer-divider"></div>
-    <a href="mailto:ikbalmalic@gmail.com" class="drawer-contact-link">ikbalmalic@gmail.com</a>
-    <a href="tel:+966533747222" class="drawer-contact-link">+966 533 747 222</a>
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer" role="dialog" aria-label="Navigation menu" aria-hidden="true">
+  <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+  <div class="drawer-logo"><span>M</span><span class="dc-dot">·</span><span>I</span></div>
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <a href="#about"        class="dl">About</a>
+    <a href="#experience"   class="dl">Career</a>
+    <a href="#achievements" class="dl">Achievements</a>
+    <a href="#projects"     class="dl">Projects</a>
+    <a href="#certs"        class="dl">Courses</a>
+    <a href="#awards"       class="dl">Awards</a>
+    <a href="#contact"      class="dl">Contact</a>
+  </nav>
+  <div class="drawer-contacts">
+    <a href="mailto:m.owais.iqbal@gmail.com">m.owais.iqbal@gmail.com</a>
+    <a href="tel:+966533747222">+966 533 747 222</a>
   </div>
 </div>
+<div class="drawer-overlay" id="drawerOverlay"></div>
 
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
 <section id="hero">
-  <div class="hero-mesh"></div>
-  <div class="hero-orb hero-orb-1"></div>
-  <div class="hero-orb hero-orb-2"></div>
-  <div class="hero-orb hero-orb-3"></div>
-  <div class="hero-grid-pattern"></div>
+  <!-- Background layers -->
+  <div class="hero-lattice" aria-hidden="true"></div>
+  <div class="hero-gradient" aria-hidden="true"></div>
+  <div class="glow-orb go-1" aria-hidden="true"></div>
+  <div class="glow-orb go-2" aria-hidden="true"></div>
+  <div class="glow-orb go-3" aria-hidden="true"></div>
 
-  <div class="hero-container">
+  <div class="hero-inner">
+    <!-- Left column -->
     <div class="hero-left">
-      <div class="h-status" data-anim="fade-up">
-        <span class="hs-dot"></span>
-        <span class="hs-text">Open to opportunities in KSA &amp; GCC</span>
+      <div class="h-status" data-reveal>
+        <span class="hs-dot" aria-hidden="true"></span>
+        <span>Open to opportunities in KSA &amp; GCC</span>
       </div>
 
-      <h1 class="h-name" id="heroName">
-        <span class="hn-line hn-first"><span class="hn-word" data-letters>Muhammad</span></span>
-        <span class="hn-line hn-last"><span class="hn-word hn-gold" data-letters>Iqbal</span></span>
+      <h1 class="h-name" aria-label="Muhammad Iqbal">
+        <span class="hn-line" data-reveal style="--rv-d:.1s">
+          <span class="hn-word">Muhammad</span>
+        </span>
+        <span class="hn-line" data-reveal style="--rv-d:.22s">
+          <span class="hn-word hn-cyan">Iqbal</span>
+        </span>
+        <span class="h-pmp" data-reveal style="--rv-d:.32s">PMP®</span>
       </h1>
 
-      <div class="h-role" data-anim="fade-up" style="--d:.3s">
-        <div class="hr-track">
-          <span id="roleText" class="hr-text">Program Management | Infrastructure &amp; Telecom Networks Modernization | PMO Governance</span>
-          <span class="hr-cursor"></span>
-        </div>
+      <div class="h-role-wrap" data-reveal style="--rv-d:.4s">
+        <span id="roleText" class="h-role-text" aria-live="polite"></span>
+        <span class="h-role-cursor" aria-hidden="true"></span>
       </div>
 
-      <p class="h-bio" data-anim="fade-up" style="--d:.45s">
-        30+ years of experience in program management across infrastructure, telecom, and digital consultancy sectors with strong capability in strategic planning, forecasting, budgeting, analysis, operational excellence, resource planning, stakeholder management, pre-sales, and sales.
+      <p class="h-bio" data-reveal style="--rv-d:.5s">
+        30+ years of experience in program management across infrastructure, telecom, and digital consultancy sectors with strong capability in strategic planning, forecasting, budgeting, operational excellence, resource planning, stakeholder management, and pre-sales.
       </p>
 
-      <div class="h-ctas" data-anim="fade-up" style="--d:.6s">
-        <a href="#experience" class="btn-primary magnetic">
+      <div class="h-ctas" data-reveal style="--rv-d:.62s">
+        <a href="#experience" class="btn-primary">
           <span>View Experience</span>
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M8.5 3.5L13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="#contact" class="btn-outline magnetic">Contact Me</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
       </div>
 
-      <div class="h-badges" data-anim="fade-up" style="--d:.75s">
-        <span class="h-badge">📍 Riyadh, KSA</span>
-        <span class="h-badge">🏆 PMP®</span>
-        <span class="h-badge">🛂 Valid Transferable Iqama</span>
-        <span class="h-badge">🌍 Open to KSA &amp; GCC</span>
+      <div class="h-badges" data-reveal style="--rv-d:.74s">
+        <span class="hbadge">📍 Riyadh, KSA</span>
+        <span class="hbadge">🏆 PMP®</span>
+        <span class="hbadge">🛂 Transferable Iqama</span>
+        <span class="hbadge">🌍 KSA &amp; GCC Ready</span>
       </div>
     </div>
 
-    <div class="hero-right" data-anim="fade-scale" style="--d:.2s">
-      <div class="mono-card" id="monoCard">
-        <div class="mc-glow"></div>
-        <div class="mc-rings">
+    <!-- Right column — Holographic monogram card -->
+    <div class="hero-right" data-reveal style="--rv-d:.18s">
+      <div class="mono-card" id="monoCard" aria-label="MI monogram card">
+        <div class="mc-glow" aria-hidden="true"></div>
+        <div class="mc-frame" aria-hidden="true">
+          <span class="mcf mcf-tl"></span>
+          <span class="mcf mcf-tr"></span>
+          <span class="mcf mcf-bl"></span>
+          <span class="mcf mcf-br"></span>
+        </div>
+        <div class="mc-rings" aria-hidden="true">
           <div class="mc-ring mc-r1"></div>
           <div class="mc-ring mc-r2"></div>
-          <div class="mc-ring mc-r3"></div>
-        </div>
-        <div class="mc-corners">
-          <div class="mc-corner mc-c1"></div><div class="mc-corner mc-c2"></div>
-          <div class="mc-corner mc-c3"></div><div class="mc-corner mc-c4"></div>
         </div>
         <div class="mc-body">
-          <span class="mc-letter mc-m">M</span>
+          <span class="mc-m">M</span>
           <span class="mc-sep">·</span>
-          <span class="mc-letter mc-i">I</span>
+          <span class="mc-i">I</span>
         </div>
-        <div class="mc-tag mc-tag-top">PROGRAM MANAGEMENT · PMO · TELECOM · INFRASTRUCTURE</div>
-        <div class="mc-tag mc-tag-bot">RIYADH · SAUDI ARABIA</div>
-        <div class="mc-scanline"></div>
+        <div class="mc-scan" aria-hidden="true"></div>
+        <div class="mc-tag-t" aria-hidden="true">PROGRAM MGT · PMO · TELECOM · INFRASTRUCTURE</div>
+        <div class="mc-tag-b" aria-hidden="true">RIYADH · SAUDI ARABIA · SINCE 1993</div>
+        <div class="mc-holo-stripe" aria-hidden="true"></div>
       </div>
 
-      <div class="hero-kpis">
-        <div class="hkpi">
-          <span class="hkpi-icon">🏅</span>
-          <div class="hkpi-body"><strong>Huawei President Commendation</strong><span>Twice</span></div>
+      <!-- KPI orbs -->
+      <div class="hero-kpis" aria-label="Key highlights">
+        <div class="hkpi" data-reveal style="--rv-d:.85s">
+          <span class="hkpi-ico" aria-hidden="true">🏅</span>
+          <div>
+            <strong>Huawei President Commendation</strong>
+            <span>Twice Awarded</span>
+          </div>
         </div>
-        <div class="hkpi">
-          <span class="hkpi-icon">💰</span>
-          <div class="hkpi-body"><strong>USD 30M–65M</strong><span>Annual Portfolios Directed</span></div>
+        <div class="hkpi" data-reveal style="--rv-d:.95s">
+          <span class="hkpi-ico" aria-hidden="true">💰</span>
+          <div>
+            <strong>USD 30M–65M</strong>
+            <span>Annual Portfolios Directed</span>
+          </div>
         </div>
-        <div class="hkpi">
-          <span class="hkpi-icon">👥</span>
-          <div class="hkpi-body"><strong>1,200+ Professionals</strong><span>Teams Led</span></div>
+        <div class="hkpi" data-reveal style="--rv-d:1.05s">
+          <span class="hkpi-ico" aria-hidden="true">👥</span>
+          <div>
+            <strong>1,200+ Professionals</strong>
+            <span>Teams Led</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="hero-scroll">
-    <div class="hs-wire"></div>
-    <span>Scroll to Explore</span>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hs-line"></div>
+    <span>Scroll</span>
   </div>
 </section>
 
-<section id="stats">
-  <div class="stats-inner">
-    <div class="stat-ring" data-anim="fade-up">
-      <div class="sr-svg-wrap">
-        <svg viewBox="0 0 120 120">
+<!-- ═══════════════════════════════ STATS ═══════════════════════════════ -->
+<section id="stats" aria-label="Career statistics">
+  <div class="stats-grid">
+
+    <div class="stat-ring" data-reveal>
+      <div class="sr-wrap">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="sr-track" cx="60" cy="60" r="52"/>
           <circle class="sr-fill" cx="60" cy="60" r="52" data-pct="100"/>
         </svg>
-        <div class="sr-val"><span data-count="30" data-suffix="+">0+</span></div>
+        <div class="sr-val"><span data-count="30" data-suffix="+">0</span></div>
       </div>
       <p>Years Experience</p>
     </div>
 
-    <div class="stat-ring" data-anim="fade-up" style="--d:.08s">
-      <div class="sr-svg-wrap">
-        <svg viewBox="0 0 120 120">
+    <div class="stat-ring" data-reveal style="--rv-d:.08s">
+      <div class="sr-wrap">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="sr-track" cx="60" cy="60" r="52"/>
           <circle class="sr-fill" cx="60" cy="60" r="52" data-pct="88"/>
         </svg>
@@ -205,9 +235,9 @@
       <p>Annual Portfolio Scale</p>
     </div>
 
-    <div class="stat-ring" data-anim="fade-up" style="--d:.16s">
-      <div class="sr-svg-wrap">
-        <svg viewBox="0 0 120 120">
+    <div class="stat-ring" data-reveal style="--rv-d:.16s">
+      <div class="sr-wrap">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="sr-track" cx="60" cy="60" r="52"/>
           <circle class="sr-fill" cx="60" cy="60" r="52" data-pct="92"/>
         </svg>
@@ -216,9 +246,9 @@
       <p>Professionals Led</p>
     </div>
 
-    <div class="stat-ring" data-anim="fade-up" style="--d:.24s">
-      <div class="sr-svg-wrap">
-        <svg viewBox="0 0 120 120">
+    <div class="stat-ring" data-reveal style="--rv-d:.24s">
+      <div class="sr-wrap">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="sr-track" cx="60" cy="60" r="52"/>
           <circle class="sr-fill" cx="60" cy="60" r="52" data-pct="80"/>
         </svg>
@@ -227,9 +257,9 @@
       <p>Signature Projects</p>
     </div>
 
-    <div class="stat-ring" data-anim="fade-up" style="--d:.32s">
-      <div class="sr-svg-wrap">
-        <svg viewBox="0 0 120 120">
+    <div class="stat-ring" data-reveal style="--rv-d:.32s">
+      <div class="sr-wrap">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="sr-track" cx="60" cy="60" r="52"/>
           <circle class="sr-fill" cx="60" cy="60" r="52" data-pct="72"/>
         </svg>
@@ -238,9 +268,9 @@
       <p>SEVEN Contract Value</p>
     </div>
 
-    <div class="stat-ring" data-anim="fade-up" style="--d:.40s">
-      <div class="sr-svg-wrap">
-        <svg viewBox="0 0 120 120">
+    <div class="stat-ring" data-reveal style="--rv-d:.40s">
+      <div class="sr-wrap">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="sr-track" cx="60" cy="60" r="52"/>
           <circle class="sr-fill" cx="60" cy="60" r="52" data-pct="85"/>
         </svg>
@@ -248,479 +278,465 @@
       </div>
       <p>Reduction in Client Complaints</p>
     </div>
+
   </div>
 </section>
 
+<!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="mq-track">
-    <span>PROGRAM &amp; PORTFOLIO MANAGEMENT</span><span class="mq-sep">◆</span>
-    <span>PMO SET-UP &amp; GOVERNANCE</span><span class="mq-sep">◆</span>
-    <span>AGILE PROGRAM MANAGEMENT</span><span class="mq-sep">◆</span>
-    <span>FINANCIAL GOVERNANCE &amp; P&amp;L</span><span class="mq-sep">◆</span>
-    <span>STAKEHOLDER &amp; CLIENT ENGAGEMENT</span><span class="mq-sep">◆</span>
-    <span>VENDOR MANAGEMENT</span><span class="mq-sep">◆</span>
-    <span>MANAGED SERVICES</span><span class="mq-sep">◆</span>
-    <span>NETWORK MERGERS &amp; CONSOLIDATIONS</span><span class="mq-sep">◆</span>
-    <span>PROGRAM &amp; PORTFOLIO MANAGEMENT</span><span class="mq-sep">◆</span>
-    <span>PMO SET-UP &amp; GOVERNANCE</span><span class="mq-sep">◆</span>
+    <span>PROGRAM &amp; PORTFOLIO MANAGEMENT</span><span class="mq-gem">◆</span>
+    <span>PMO SET-UP &amp; GOVERNANCE</span><span class="mq-gem">◆</span>
+    <span>AGILE PROGRAM MANAGEMENT</span><span class="mq-gem">◆</span>
+    <span>FINANCIAL GOVERNANCE &amp; P&amp;L</span><span class="mq-gem">◆</span>
+    <span>STAKEHOLDER &amp; CLIENT ENGAGEMENT</span><span class="mq-gem">◆</span>
+    <span>VENDOR MANAGEMENT</span><span class="mq-gem">◆</span>
+    <span>MANAGED SERVICES</span><span class="mq-gem">◆</span>
+    <span>NETWORK MERGERS &amp; CONSOLIDATIONS</span><span class="mq-gem">◆</span>
+    <span>PROGRAM &amp; PORTFOLIO MANAGEMENT</span><span class="mq-gem">◆</span>
+    <span>PMO SET-UP &amp; GOVERNANCE</span><span class="mq-gem">◆</span>
+    <span>AGILE PROGRAM MANAGEMENT</span><span class="mq-gem">◆</span>
+    <span>FINANCIAL GOVERNANCE &amp; P&amp;L</span><span class="mq-gem">◆</span>
   </div>
 </div>
 
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
 <section id="about">
-  <div class="about-container">
-    <div class="about-left">
-      <p class="sec-eye" data-anim="fade-up">About</p>
-      <h2 class="sec-h2" data-anim="fade-up" style="--d:.08s">Professional<br>Summary</h2>
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-left">
+        <p class="sec-eye" data-reveal>About</p>
+        <h2 class="sec-h2" data-reveal style="--rv-d:.08s">Professional<br>Summary</h2>
 
-      <blockquote class="about-quote" data-anim="fade-up" style="--d:.18s">
-        "I bring dedication to achieve the business goals by utilizing my in-depth knowledge and 30+ years’ experience in program management of infrastructure, telecom and digital consultancy sectors along with business acumen for strategic planning, forecasting, budgeting and analysis, operational excellence, resource planning, stakeholder management, pre-sales and sales."
-      </blockquote>
+        <blockquote class="about-quote" data-reveal style="--rv-d:.18s">
+          "I bring dedication to achieve the business goals by utilizing my in-depth knowledge and 30+ years' experience in program management of infrastructure, telecom, and digital consultancy sectors along with business acumen for strategic planning, forecasting, budgeting, analysis, operational excellence, resource planning, stakeholder management, pre-sales, and sales."
+        </blockquote>
 
-      <p class="about-text" data-anim="fade-up" style="--d:.24s">
-        In the last 15+ years, I have delivered large-scale and high-value infrastructure projects for Saudi Electricity Company, municipalities across KSA, and rollout, transformation, swap, and merger projects for telecom operators in the Middle East including Etisalat, Mobily, China Mobile, and Veon Group.
-      </p>
+        <p class="about-text" data-reveal style="--rv-d:.26s">
+          In the last 15+ years, I have delivered large-scale and high-value infrastructure projects for Saudi Electricity Company, municipalities across KSA, and rollout, transformation, swap, and merger projects for telecom operators in the Middle East including Etisalat, Mobily, China Mobile, and Veon Group.
+        </p>
+        <p class="about-text" data-reveal style="--rv-d:.32s">
+          More recently, I have provided PMO functional oversight, governance, and delivery assurance for digital governance and transformation consultancy programs for Saudi organizations including ZATCA, HRDA, SEC, TGA, NDMO, SDAIA, and GSTAT.
+        </p>
 
-      <p class="about-text" data-anim="fade-up" style="--d:.30s">
-        More recently, I have provided PMO functional oversight, governance, and delivery assurance for digital governance and transformation consultancy programs for Saudi organizations including ZATCA, HRDA, SEC, TGA, NDMO, SDAIA, and GSTAT.
-      </p>
-      <br>
-      <a href="#contact" class="btn-outline magnetic" data-anim="fade-up" style="--d:.36s">Get in Touch</a>
+        <a href="#contact" class="btn-outline" data-reveal style="--rv-d:.38s">Get in Touch</a>
 
-      <div class="about-metrics" data-anim="fade-up" style="--d:.42s">
-        <div class="am-item"><span class="am-val">30+</span><span class="am-lbl">Years</span></div>
-        <div class="am-item"><span class="am-val">15+</span><span class="am-lbl">Recent Years in KSA / ME Projects</span></div>
-        <div class="am-item"><span class="am-val">PMP®</span><span class="am-lbl">Professional Certification</span></div>
+        <div class="about-metrics" data-reveal style="--rv-d:.44s">
+          <div class="am-item"><span class="am-val">30+</span><span class="am-lbl">Years</span></div>
+          <div class="am-item"><span class="am-val">15+</span><span class="am-lbl">Years in KSA / ME</span></div>
+          <div class="am-item"><span class="am-val">PMP®</span><span class="am-lbl">Certified</span></div>
+        </div>
       </div>
-    </div>
 
-    <div class="about-right">
-      <p class="sec-eye" data-anim="fade-up" style="--d:.1s">Core Competencies</p>
-      <div class="comp-grid" data-anim="fade-up" style="--d:.2s">
-        <div class="comp-item shimmer">Program &amp; Portfolio Management</div>
-        <div class="comp-item shimmer">Agile Program Management</div>
-        <div class="comp-item shimmer">PMO Set-up &amp; Governance</div>
-        <div class="comp-item shimmer">Strategic Contract Negotiation</div>
-        <div class="comp-item shimmer">Critical Patch Analysis</div>
-        <div class="comp-item shimmer">Technical &amp; Commercial Proposal Preparation</div>
-        <div class="comp-item shimmer">Financial Governance &amp; P&amp;L Management</div>
-        <div class="comp-item shimmer">Stakeholder &amp; Client Engagement</div>
-        <div class="comp-item shimmer">Vendor Management</div>
-        <div class="comp-item shimmer">Shared Services</div>
-        <div class="comp-item shimmer">Managed Services</div>
-        <div class="comp-item shimmer">Network Mergers, Interoperability &amp; Consolidations</div>
+      <div class="about-right">
+        <p class="sec-eye" data-reveal style="--rv-d:.1s">Core Competencies</p>
+        <div class="comp-grid" data-reveal style="--rv-d:.18s">
+          <div class="comp-item">Program &amp; Portfolio Management</div>
+          <div class="comp-item">Agile Program Management</div>
+          <div class="comp-item">PMO Set-up &amp; Governance</div>
+          <div class="comp-item">Strategic Contract Negotiation</div>
+          <div class="comp-item">Critical Patch Analysis</div>
+          <div class="comp-item">Financial Governance &amp; P&amp;L</div>
+          <div class="comp-item">Stakeholder Engagement</div>
+          <div class="comp-item">Vendor Management</div>
+          <div class="comp-item">Managed Services</div>
+          <div class="comp-item">Network Mergers</div>
+          <div class="comp-item">Digital Transformation</div>
+          <div class="comp-item">ISO 9001 · ISO 27001</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
 <section id="experience">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Work Experience</p>
       <h2 class="sec-h2">Career History</h2>
     </div>
 
     <div class="timeline">
-      <div class="tl-line-wrap"><div class="tl-line" id="tlLine"></div></div>
+      <div class="tl-spine" aria-hidden="true"><div class="tl-spine-fill" id="spineFill"></div></div>
 
-      <div class="tl-entry tl-left">
-        <div class="tl-connector"><div class="tl-dot tl-dot-active"></div></div>
-        <div class="tl-card glass-card">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Tamayouz Business Services, Riyadh KSA</div><span class="tc-badge tc-badge-current">Current</span></div>
+      <!-- Entry 1 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot tl-dot-active" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tc-accent"></div>
+          <div class="tc-top">
+            <div>
+              <div class="tc-company">Tamayouz Business Services, Riyadh KSA</div>
+              <span class="tc-badge">● Current</span>
+            </div>
+            <span class="tc-period">Feb 2025 – Present</span>
+          </div>
           <div class="tc-role">PMO &amp; Operations Manager</div>
-          <div class="tc-meta"><span class="tc-period">Feb 2025 – Present</span><span class="tc-loc">📍 Riyadh, KSA</span></div>
-          <p class="tc-desc">
-            Leading PMO and operational governance for consultancy programs worth SAR 40M annually focused on data governance, cybersecurity, and digital transformation across major Saudi government and private entities.
-          </p>
+          <p class="tc-desc">Leading PMO and operational governance for consultancy programs worth SAR 40M annually focused on data governance, cybersecurity, and digital transformation across major Saudi government and private entities.</p>
           <ul class="tc-list">
             <li>Established and led the Enterprise PMO with standardized project management methodologies, governance frameworks, and delivery controls</li>
-            <li>Standardized project delivery and governance to improve scope, schedule, budget, and stakeholder value</li>
             <li>Implemented performance management systems, KPIs, and executive dashboards</li>
             <li>Strengthened portfolio risk management, quality assurance, and compliance aligned with SDAIA, NDMO, GDPR, ISO 9001, and ISO 27001</li>
             <li>Directed cross-functional operations including PMO, procurement, HR, and administration</li>
-            <li>Contributed to government financial rating review by preparing and validating key financial data</li>
             <li>Consolidated 5-year project P&amp;L portfolio and established monthly delivery and financial review roadmap</li>
           </ul>
-          <div class="tc-tags"><span>SAR 40M / Year</span><span>Enterprise PMO</span><span>ISO 9001</span><span>ISO 27001</span><span>Odoo ERP</span></div>
+          <div class="tc-tags">
+            <span>SAR 40M / Year</span><span>Enterprise PMO</span><span>ISO 9001</span><span>ISO 27001</span><span>Odoo ERP</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-right">
-        <div class="tl-connector"><div class="tl-dot"></div></div>
-        <div class="tl-card glass-card">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Al Rammah International, Al Khobar KSA</div></div>
+      <!-- Entry 2 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tc-accent"></div>
+          <div class="tc-top">
+            <div>
+              <div class="tc-company">Al Rammah International, Al Khobar KSA</div>
+            </div>
+            <span class="tc-period">Dec 2024 – Feb 2025</span>
+          </div>
           <div class="tc-role">Head of PMO / Project Manager (SEVEN Project – Jazan)</div>
-          <div class="tc-meta"><span class="tc-period">Dec 2024 – Feb 2025</span><span class="tc-loc">📍 Al Khobar, KSA</span></div>
-          <p class="tc-desc">
-            Established PMO governance and delivery frameworks to strengthen project oversight and operational processes.
-          </p>
+          <p class="tc-desc">Established PMO governance and delivery frameworks to strengthen project oversight and operational processes.</p>
           <ul class="tc-list">
             <li>Led negotiations with Alfanar, securing SAR 68M turnkey contract for ICT, Security, and AV systems in SEVEN Jazan</li>
             <li>Managed vendor engagement with 25+ SEVEN-approved global OEMs and regional distributors</li>
             <li>Implemented procurement and pricing negotiations, improving project profitability by 11%</li>
             <li>Led technical team in developing MTS documentation and 2nd-fix drawings aligned with IFC standards</li>
-            <li>Worked with vendor for ERP processes and workflows alignment followed by Odoo implementation</li>
           </ul>
-          <div class="tc-tags"><span>SAR 68M</span><span>SEVEN</span><span>ICT</span><span>Security</span><span>AV</span></div>
+          <div class="tc-tags">
+            <span>SAR 68M</span><span>SEVEN</span><span>ICT</span><span>Security</span><span>AV</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-left">
-        <div class="tl-connector"><div class="tl-dot"></div></div>
-        <div class="tl-card glass-card">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Northern Mountains Contracting, Riyadh KSA</div></div>
+      <!-- Entry 3 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tc-accent"></div>
+          <div class="tc-top">
+            <div><div class="tc-company">Northern Mountains Contracting, Riyadh KSA</div></div>
+            <span class="tc-period">Jan 2023 – Dec 2024</span>
+          </div>
           <div class="tc-role">Chief Executive Officer</div>
-          <div class="tc-meta"><span class="tc-period">Jan 2023 – Dec 2024</span><span class="tc-loc">📍 Riyadh, KSA</span></div>
-          <p class="tc-desc">
-            Spearheaded organizational transformation by instituting PMO governance, restructuring operations, and establishing portfolio-driven delivery across SEC and municipal infrastructure programs in Saudi Arabia.
-          </p>
+          <p class="tc-desc">Spearheaded organizational transformation by instituting PMO governance, restructuring operations, and establishing portfolio-driven delivery across SEC and municipal infrastructure programs in Saudi Arabia.</p>
           <ul class="tc-list">
             <li>Delivered 20% workforce efficiency improvement, 85% reduction in client complaints, and 9% profitability growth</li>
             <li>Secured SAR 18M in municipal and infrastructure contracts including Al-Hail Municipality projects with 45% profit margin</li>
-            <li>Led executive engagement with SEC to secure re-award of the SAR 11M Al-Majma’ah project</li>
+            <li>Led executive engagement with SEC to secure re-award of the SAR 11M Al-Majma'ah project</li>
             <li>Secured street lights O&amp;M contract in Municipality Jeddah for 5 years worth SAR 42M</li>
             <li>Enabled collection of SAR 13M from long-outstanding projects</li>
-            <li>Improved project financial governance and reduced revenue slippage and cost overruns</li>
-            <li>Built in-house facility to maintain 250+ vehicles, achieving 20% cost reduction and 35% MTTR improvement</li>
-            <li>Led digital transformation initiatives including ERP, CRM rollout, and petro App</li>
           </ul>
-          <div class="tc-tags"><span>CEO</span><span>SAR 42M</span><span>SAR 13M Recovered</span><span>250+ Vehicles</span></div>
+          <div class="tc-tags">
+            <span>CEO</span><span>SAR 42M</span><span>SAR 13M Recovered</span><span>250+ Vehicles</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-right">
-        <div class="tl-connector"><div class="tl-dot"></div></div>
-        <div class="tl-card glass-card">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Huawei Technologies</div></div>
+      <!-- Entry 4 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tc-accent"></div>
+          <div class="tc-top">
+            <div><div class="tc-company">Huawei Technologies</div></div>
+            <span class="tc-period">Nov 2021 – Dec 2022</span>
+          </div>
           <div class="tc-role">Director Managed Services Department</div>
-          <div class="tc-meta"><span class="tc-period">Nov 2021 – Dec 2022</span><span class="tc-loc">📍 Pakistan</span></div>
-          <p class="tc-desc">
-            Led large-scale telecom managed services operations with 1,200+ professionals delivering USD 30M annual business across major operator networks.
-          </p>
+          <p class="tc-desc">Led large-scale telecom managed services operations with 1,200+ professionals delivering USD 30M annual business across major operator networks.</p>
           <ul class="tc-list">
             <li>Achieved 7% year-on-year growth</li>
             <li>Secured Ufone Managed Services 5-year frame contract on improved commercial terms</li>
             <li>Enabled expansion into Jazz and Zong through Automation Intelligence initiatives</li>
-            <li>Implemented workforce restructuring, agile delivery models, and digital automation</li>
             <li>Renegotiated vendor and subcontractor pricing, achieving 8% internal cost reduction</li>
-            <li>Ensured SLA and KPI compliance across multi-operator service programs</li>
-            <li>Oversaw financial governance, vendor ecosystem management, risk mitigation, and QHSE compliance</li>
           </ul>
-          <div class="tc-tags"><span>USD 30M</span><span>1,200+ Team</span><span>7% YoY</span><span>Managed Services</span></div>
+          <div class="tc-tags">
+            <span>USD 30M</span><span>1,200+ Team</span><span>7% YoY</span><span>Managed Services</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-left">
-        <div class="tl-connector"><div class="tl-dot"></div></div>
-        <div class="tl-card glass-card">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Huawei Technologies</div></div>
+      <!-- Entry 5 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tc-accent"></div>
+          <div class="tc-top">
+            <div><div class="tc-company">Huawei Technologies</div></div>
+            <span class="tc-period">Jun 2018 – Oct 2021</span>
+          </div>
           <div class="tc-role">Director D&amp;S (Etisalat PTCL Key Account) &amp; PD</div>
-          <div class="tc-meta"><span class="tc-period">Jun 2018 – Oct 2021</span><span class="tc-loc">📍 Pakistan</span></div>
-          <p class="tc-desc">
-            Directed delivery operations for PTCL’s nationwide telecom infrastructure program and managed strategic network transformation programs.
-          </p>
+          <p class="tc-desc">Directed delivery operations for PTCL's nationwide telecom infrastructure program and managed strategic network transformation programs.</p>
           <ul class="tc-list">
             <li>Managed USD 35M–50M annual business and led 300+ engineers and delivery professionals</li>
-            <li>Restored customer confidence by strengthening governance, delivery processes, and executive stakeholder engagement</li>
             <li>Achieved all contractual KPIs for three consecutive years</li>
-            <li>Delivered wireless, cloud core, IP MPLS, transmission, access, OSS/BSS, FTTx, copper rehabilitation, OSP, L3 services, and power systems</li>
+            <li>Delivered wireless, cloud core, IP MPLS, transmission, access, OSS/BSS, FTTx, copper rehabilitation, and power systems</li>
             <li>Resolved more than 50 outstanding contracts dating back to 2008</li>
-            <li>Led strategic network transformation programs including IP MPLS swap, vIMS, 100G OTN, cloud OSS migration, MSAG/MSAN/OLT swap, and FTTx projects</li>
           </ul>
-          <div class="tc-tags"><span>USD 35M–50M</span><span>300+ Team</span><span>PTCL</span><span>Transformation</span></div>
+          <div class="tc-tags">
+            <span>USD 35M–50M</span><span>300+ Team</span><span>PTCL</span><span>Transformation</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-right">
-        <div class="tl-connector"><div class="tl-dot tl-dot-gold"></div></div>
-        <div class="tl-card glass-card tl-highlight">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Huawei Technologies</div></div>
-          <div class="tc-role">Project Manager - Network Rollout Programs - Ufone</div>
-          <div class="tc-meta"><span class="tc-period">Jan 2015 – May 2018</span><span class="tc-loc">📍 Pakistan</span></div>
-          <p class="tc-desc">
-            Managed large-scale 3G/4G network rollout programs across multiple technology domains including Wireless, CS/PS Core, IP MPLS, BSS, IT, OSS, and emerging technology POCs.
-          </p>
+      <!-- Entry 6 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot tl-dot-gold" aria-hidden="true"></div>
+        <div class="tl-card tl-highlight">
+          <div class="tc-accent tc-accent-gold"></div>
+          <div class="tc-top">
+            <div><div class="tc-company">Huawei Technologies</div></div>
+            <span class="tc-period">Jan 2015 – May 2018</span>
+          </div>
+          <div class="tc-role">Project Manager – Network Rollout Programs – Ufone</div>
+          <p class="tc-desc">Managed large-scale 3G/4G network rollout programs across multiple technology domains including Wireless, CS/PS Core, IP MPLS, BSS, IT, OSS, and emerging technology POCs.</p>
           <ul class="tc-list">
             <li>Business volume: USD 40M annually | Team managed: 100+ professionals</li>
-            <li>Received Huawei’s President Commendation upon successful delivery</li>
+            <li>Received Huawei's President Commendation upon successful delivery</li>
             <li>Directed project financial governance and P&amp;L performance</li>
-            <li>Managed customers, engineering teams, supply chain, and subcontractors</li>
-            <li>Organized and led Project Steering and Operating Committee meetings</li>
-            <li>Provided pre-sales and solution support including RFP reviews, BoQ optimization, feasibility assessments, and cost estimation</li>
           </ul>
-          <div class="tc-tags"><span>USD 40M</span><span>100+ Team</span><span>Ufone</span><span>President Commendation</span></div>
+          <div class="tc-tags">
+            <span>USD 40M</span><span>100+ Team</span><span>Ufone</span><span>President Commendation</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-left">
-        <div class="tl-connector"><div class="tl-dot"></div></div>
-        <div class="tl-card glass-card">
-          <div class="tc-stripe"></div>
-          <div class="tc-head"><div class="tc-company">Huawei Technologies</div></div>
+      <!-- Entry 7 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tc-accent"></div>
+          <div class="tc-top">
+            <div><div class="tc-company">Huawei Technologies</div></div>
+            <span class="tc-period">Aug 2009 – Dec 2014</span>
+          </div>
           <div class="tc-role">Packet Core Lead (Nationwide)</div>
-          <div class="tc-meta"><span class="tc-period">Aug 2009 – Dec 2014</span><span class="tc-loc">📍 Pakistan</span></div>
-          <p class="tc-desc">
-            Led nationwide Packet Core network rollout and integration programs for Ufone, PTCL, Mobilink, Zong, and WiMax operators.
-          </p>
+          <p class="tc-desc">Led nationwide Packet Core network rollout and integration programs for Ufone, PTCL, Mobilink, Zong, and WiMax operators.</p>
           <ul class="tc-list">
             <li>Business volume: USD 15M annually | Team managed: 15+ professionals</li>
-            <li>Supported EVDO, 3G, and 4G service launches</li>
-            <li>Delivered EPC architectures including USN, UGW, CG, DNS, firewalls, and IP switching infrastructure</li>
             <li>Achieved 35% efficiency improvement in Packet Core engineering operations</li>
-            <li>Led HLD/LLD, integration with AAA, HSS, PCRF, OCS, DPI, installation, commissioning, ATP, and commercial launches</li>
             <li>Built and trained local engineering teams across the Middle East region</li>
           </ul>
-          <div class="tc-tags"><span>USD 15M</span><span>PS Core</span><span>35% Efficiency</span><span>Nationwide</span></div>
+          <div class="tc-tags">
+            <span>USD 15M</span><span>PS Core</span><span>35% Efficiency</span><span>Nationwide</span>
+          </div>
         </div>
       </div>
 
-      <div class="tl-entry tl-right">
-        <div class="tl-connector"><div class="tl-dot tl-dot-blue"></div></div>
-        <div class="tl-card glass-card tl-foundation">
-          <div class="tc-stripe tc-stripe-blue"></div>
-          <div class="tc-head"><div class="tc-company">Pakistan Air Force</div></div>
+      <!-- Entry 8 -->
+      <div class="tl-entry" data-reveal>
+        <div class="tl-dot tl-dot-blue" aria-hidden="true"></div>
+        <div class="tl-card tl-foundation">
+          <div class="tc-accent tc-accent-blue"></div>
+          <div class="tc-top">
+            <div><div class="tc-company">Pakistan Air Force</div></div>
+            <span class="tc-period">Oct 1993 – Jul 2009</span>
+          </div>
           <div class="tc-role">Manager Telecommunication Network / PME Calibration &amp; Maintenance Specialist</div>
-          <div class="tc-meta"><span class="tc-period">Oct 1993 – Jul 2009</span><span class="tc-loc">📍 Pakistan</span></div>
-          <p class="tc-desc">
-            Served in telecom network management and calibration and maintenance of TMDEs.
-          </p>
+          <p class="tc-desc">Served in telecom network management and calibration and maintenance of TMDEs.</p>
           <ul class="tc-list">
             <li>Manager Telecommunication Network: Jan 2004 – Jul 2009</li>
             <li>PME Calibration &amp; Maintenance Specialist: Oct 1993 – Dec 2003</li>
           </ul>
-          <div class="tc-tags"><span>Telecom</span><span>TMDE</span><span>Calibration</span><span>Pakistan Air Force</span></div>
+          <div class="tc-tags">
+            <span>Telecom</span><span>TMDE</span><span>Calibration</span><span>Pakistan Air Force</span>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════ ACHIEVEMENTS ═══════════════════════════════ -->
 <section id="achievements">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Key Career Achievements</p>
       <h2 class="sec-h2">Selected Achievements</h2>
     </div>
 
     <div class="flip-grid">
-      <div class="fc" data-anim="fade-up" style="--d:.0s">
+
+      <div class="fc" data-reveal>
         <div class="fc-inner">
-          <div class="fc-front glass-card">
-            <div class="fc-num">01</div>
-            <div class="fc-val">SAR 67M</div>
-            <div class="fc-title">SEC &amp; Municipalities</div>
-            <span class="fc-tag">KSA</span>
-            <div class="fc-hint">hover to reveal ↗</div>
-          </div>
-          <div class="fc-back">
-            <div class="fcb-icon">🏗️</div>
-            <p>Won SAR 67M infrastructure projects in Saudi Arabia including the re-awarded SAR 11M Al-Majma’ah Iskan project, SAR 10M Al-Hail municipality contracts with 45% profit margin, and Jeddah street lights O&amp;M contract.</p>
-          </div>
+          <div class="fc-front"><div class="fc-num">01</div><div class="fc-val">SAR 67M</div><div class="fc-title">SEC &amp; Municipalities</div><span class="fc-region">KSA</span><p class="fc-hint">hover to reveal →</p></div>
+          <div class="fc-back"><div class="fcb-ico">🏗️</div><p>Won SAR 67M infrastructure projects in Saudi Arabia including the re-awarded SAR 11M Al-Majma'ah Iskan project, SAR 10M Al-Hail municipality contracts with 45% profit margin, and Jeddah street lights O&amp;M contract.</p></div>
         </div>
       </div>
 
-      <div class="fc" data-anim="fade-up" style="--d:.06s">
+      <div class="fc" data-reveal style="--rv-d:.06s">
         <div class="fc-inner">
-          <div class="fc-front glass-card">
-            <div class="fc-num">02</div>
-            <div class="fc-val">SAR 68M</div>
-            <div class="fc-title">SEVEN Jazan</div>
-            <span class="fc-tag">PIF – KSA</span>
-            <div class="fc-hint">hover to reveal ↗</div>
-          </div>
-          <div class="fc-back">
-            <div class="fcb-icon">🖥️</div>
-            <p>Secured SAR 68M turnkey ICT, Security, and AV contract for SEVEN Jazan through strategic negotiations and optimized vendor procurement, improving project profitability by 11%.</p>
-          </div>
+          <div class="fc-front"><div class="fc-num">02</div><div class="fc-val">SAR 68M</div><div class="fc-title">SEVEN Jazan</div><span class="fc-region">PIF – KSA</span><p class="fc-hint">hover to reveal →</p></div>
+          <div class="fc-back"><div class="fcb-ico">🖥️</div><p>Secured SAR 68M turnkey ICT, Security, and AV contract for SEVEN Jazan through strategic negotiations and optimized vendor procurement, improving project profitability by 11%.</p></div>
         </div>
       </div>
 
-      <div class="fc" data-anim="fade-up" style="--d:.12s">
+      <div class="fc" data-reveal style="--rv-d:.12s">
         <div class="fc-inner">
-          <div class="fc-front glass-card">
-            <div class="fc-num">03</div>
-            <div class="fc-val">$30M–65M</div>
-            <div class="fc-title">Telecommunication Portfolio</div>
-            <span class="fc-tag">ME Region</span>
-            <div class="fc-hint">hover to reveal ↗</div>
-          </div>
-          <div class="fc-back">
-            <div class="fcb-icon">📡</div>
-            <p>Directed telecom delivery and managed services portfolios worth USD 30M–65M annually, leading teams of up to 1,200 professionals and achieving 7% year-on-year business growth.</p>
-          </div>
+          <div class="fc-front"><div class="fc-num">03</div><div class="fc-val">$30M–65M</div><div class="fc-title">Telecom Portfolio</div><span class="fc-region">ME Region</span><p class="fc-hint">hover to reveal →</p></div>
+          <div class="fc-back"><div class="fcb-ico">📡</div><p>Directed telecom delivery and managed services portfolios worth USD 30M–65M annually, leading teams of up to 1,200 professionals and achieving 7% year-on-year business growth.</p></div>
         </div>
       </div>
 
-      <div class="fc" data-anim="fade-up" style="--d:.18s">
+      <div class="fc" data-reveal style="--rv-d:.18s">
         <div class="fc-inner">
-          <div class="fc-front glass-card">
-            <div class="fc-num">04</div>
-            <div class="fc-val">20% / 85% / 9%</div>
-            <div class="fc-title">Operational Transformation</div>
-            <span class="fc-tag">Northern Mountains</span>
-            <div class="fc-hint">hover to reveal ↗</div>
-          </div>
-          <div class="fc-back">
-            <div class="fcb-icon">📈</div>
-            <p>Delivered operational transformation resulting in 20% workforce efficiency improvement, 85% reduction in client complaints, and 9% profitability growth through governance, process optimization, and financial controls.</p>
-          </div>
+          <div class="fc-front"><div class="fc-num">04</div><div class="fc-val">20% / 85% / 9%</div><div class="fc-title">Operational Transformation</div><span class="fc-region">Northern Mountains</span><p class="fc-hint">hover to reveal →</p></div>
+          <div class="fc-back"><div class="fcb-ico">📈</div><p>Delivered operational transformation resulting in 20% workforce efficiency improvement, 85% reduction in client complaints, and 9% profitability growth through governance and process optimization.</p></div>
         </div>
       </div>
 
-      <div class="fc" data-anim="fade-up" style="--d:.24s">
+      <div class="fc" data-reveal style="--rv-d:.24s">
         <div class="fc-inner">
-          <div class="fc-front glass-card">
-            <div class="fc-num">05</div>
-            <div class="fc-val">SAR 13M</div>
-            <div class="fc-title">Legacy Project Recovery</div>
-            <span class="fc-tag">Northern Mountains</span>
-            <div class="fc-hint">hover to reveal ↗</div>
-          </div>
-          <div class="fc-back">
-            <div class="fcb-icon">💼</div>
-            <p>Established a project closure framework and mobilized internal teams to resolve legacy deliverables, enabling the collection of SAR 13M from long-outstanding projects.</p>
-          </div>
+          <div class="fc-front"><div class="fc-num">05</div><div class="fc-val">SAR 13M</div><div class="fc-title">Legacy Recovery</div><span class="fc-region">Northern Mountains</span><p class="fc-hint">hover to reveal →</p></div>
+          <div class="fc-back"><div class="fcb-ico">💼</div><p>Established a project closure framework and mobilized internal teams to resolve legacy deliverables, enabling the collection of SAR 13M from long-outstanding projects.</p></div>
         </div>
       </div>
 
-      <div class="fc" data-anim="fade-up" style="--d:.30s">
+      <div class="fc" data-reveal style="--rv-d:.30s">
         <div class="fc-inner">
-          <div class="fc-front glass-card">
-            <div class="fc-num">06</div>
-            <div class="fc-val">35%</div>
-            <div class="fc-title">Engineering Efficiency</div>
-            <span class="fc-tag">Huawei</span>
-            <div class="fc-hint">hover to reveal ↗</div>
-          </div>
-          <div class="fc-back">
-            <div class="fcb-icon">⚙️</div>
-            <p>Developed engineering productivity benchmarks and delivery cost models, achieving 35% efficiency improvement in Packet Core engineering operations.</p>
-          </div>
+          <div class="fc-front"><div class="fc-num">06</div><div class="fc-val">35%</div><div class="fc-title">Engineering Efficiency</div><span class="fc-region">Huawei</span><p class="fc-hint">hover to reveal →</p></div>
+          <div class="fc-back"><div class="fcb-ico">⚙️</div><p>Developed engineering productivity benchmarks and delivery cost models, achieving 35% efficiency improvement in Packet Core engineering operations.</p></div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
 <section id="projects">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Signature Projects Delivered</p>
       <h2 class="sec-h2">Project Portfolio</h2>
-      <p class="sec-sub">Tap any project to expand details</p>
     </div>
 
     <div class="accordion" id="accordion">
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">01</span><span class="ac-info"><span class="ac-name">PTCL IP MPLS Swap (Nationwide)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">PTCL</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Strategic network transformation replacing legacy Cisco and Juniper platforms. Huawei President Commendation received upon successful delivery.</p><div class="ac-tags"><span>IP MPLS</span><span>Nationwide</span><span>PTCL</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">02</span><span class="ac-info"><span class="ac-name">PTCL 100G OTN (Nationwide)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">OTN</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Legacy transmission network modernization to 100G OTN architecture.</p><div class="ac-tags"><span>100G OTN</span><span>PTCL</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">03</span><span class="ac-info"><span class="ac-name">PTCL vIMS (NGN Swap)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">vIMS</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">NGN transformation to vIMS architecture for next-generation voice services.</p><div class="ac-tags"><span>vIMS</span><span>NGN</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">04</span><span class="ac-info"><span class="ac-name">PTCL AN Modernization (Copper to Fiber network)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">Fiber</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Legacy copper rehabilitation and modernization including MSAG, MSAN, OLTs, FTTx, and OSP deployment.</p><div class="ac-tags"><span>FTTx</span><span>OSP</span><span>Access Network</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">05</span><span class="ac-info"><span class="ac-name">Ufone 3G Rollout (10K+ sites)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">Ufone</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Large-scale network rollout program delivered across multiple domains. President Commendation received upon successful delivery.</p><div class="ac-tags"><span>3G</span><span>10K+ Sites</span><span>Ufone</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">06</span><span class="ac-info"><span class="ac-name">Mobilink 3G Rollout (10K+ sites)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">Mobilink</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Nationwide 3G rollout project covering large-scale deployment and coordination.</p><div class="ac-tags"><span>3G</span><span>10K+ Sites</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">07</span><span class="ac-info"><span class="ac-name">Zong 4G Rollout (10K+ sites)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">Zong</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Large-scale 4G rollout project delivered across Pakistan.</p><div class="ac-tags"><span>4G</span><span>10K+ Sites</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">08</span><span class="ac-info"><span class="ac-name">Ufone USF Rollout (3K+ sites)</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">USF</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">USF rollout covering 3,000+ sites.</p><div class="ac-tags"><span>USF</span><span>3K+ Sites</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">09</span><span class="ac-info"><span class="ac-name">Ufone CBS</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">CBS</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Convergent billing system implementation project.</p><div class="ac-tags"><span>CBS</span><span>Billing</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">10</span><span class="ac-info"><span class="ac-name">Ufone CS &amp; PS Core Swap</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">Core</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Core network swap delivered as part of telecom modernization program.</p><div class="ac-tags"><span>CS Core</span><span>PS Core</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">11</span><span class="ac-info"><span class="ac-name">PTCL PDSN Deployment</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">PDSN</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">PDSN deployment supporting telecom data services and core rationalization.</p><div class="ac-tags"><span>PDSN</span><span>PTCL</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">12</span><span class="ac-info"><span class="ac-name">PS Core Consolidation</span><span class="ac-cat">Telecom</span></span><span class="ac-meta"><span class="ac-tag">PS Core</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Packet core consolidation and architecture optimization project.</p><div class="ac-tags"><span>PS Core</span><span>Consolidation</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">13</span><span class="ac-info"><span class="ac-name">Unified Distribution Contract – Saudi Electricity Company</span><span class="ac-cat">Infrastructure</span></span><span class="ac-meta"><span class="ac-tag">SEC</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Infrastructure delivery for Saudi Electricity Company in Saudi Arabia.</p><div class="ac-tags"><span>SEC</span><span>Infrastructure</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">14</span><span class="ac-info"><span class="ac-name">Street Lights Deployment and O&amp;M Contracts – Jeddah, Hail, Moqq</span><span class="ac-cat">Municipal Infrastructure</span></span><span class="ac-meta"><span class="ac-tag">O&amp;M</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Street lights deployment and operations and maintenance contracts across multiple municipalities in KSA.</p><div class="ac-tags"><span>Jeddah</span><span>Hail</span><span>Moqq</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">15</span><span class="ac-info"><span class="ac-name">DGM, PDPL, Cybersecurity – ZATCA, SDAIA, TGA, HRDA, MOZN, MODON, Starlink etc.</span><span class="ac-cat">Digital Governance</span></span><span class="ac-meta"><span class="ac-tag">Consultancy</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">PMO oversight, governance, and delivery assurance across data governance, privacy, and cybersecurity transformation initiatives.</p><div class="ac-tags"><span>DGM</span><span>PDPL</span><span>Cybersecurity</span></div></div></div></div>
-      <div class="ac-item"><button class="ac-head"><span class="ac-num">16</span><span class="ac-info"><span class="ac-name">SEVEN Jazan (pre-sales, contract negotiations ~ contract award)</span><span class="ac-cat">KSA</span></span><span class="ac-meta"><span class="ac-tag">SEVEN</span><span class="ac-arrow">⌄</span></span></button><div class="ac-body"><div class="ac-inner"><p class="ac-desc">Led pre-sales, contract negotiations, vendor engagement, and contract award activities for SEVEN Jazan.</p><div class="ac-tags"><span>SEVEN</span><span>Pre-sales</span><span>Contract Negotiation</span></div></div></div></div>
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">01</span><span class="ac-info"><span class="ac-name">PTCL IP MPLS Swap (Nationwide)</span><span class="ac-cat">Telecom · PTCL</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Strategic network transformation replacing legacy Cisco and Juniper platforms. Huawei President Commendation received upon successful delivery.</p><div class="ac-tags"><span>IP MPLS</span><span>Nationwide</span><span>PTCL</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">02</span><span class="ac-info"><span class="ac-name">PTCL 100G OTN (Nationwide)</span><span class="ac-cat">Telecom · OTN</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Legacy transmission network modernization to 100G OTN architecture.</p><div class="ac-tags"><span>100G OTN</span><span>PTCL</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">03</span><span class="ac-info"><span class="ac-name">PTCL vIMS (NGN Swap)</span><span class="ac-cat">Telecom · vIMS</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>NGN transformation to vIMS architecture for next-generation voice services.</p><div class="ac-tags"><span>vIMS</span><span>NGN</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">04</span><span class="ac-info"><span class="ac-name">PTCL AN Modernization (Copper to Fiber)</span><span class="ac-cat">Telecom · Fiber</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Legacy copper rehabilitation and modernization including MSAG, MSAN, OLTs, FTTx, and OSP deployment.</p><div class="ac-tags"><span>FTTx</span><span>OSP</span><span>Access Network</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">05</span><span class="ac-info"><span class="ac-name">Ufone 3G Rollout (10K+ sites)</span><span class="ac-cat">Telecom · Ufone</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Large-scale network rollout program delivered across multiple domains. President Commendation received upon successful delivery.</p><div class="ac-tags"><span>3G</span><span>10K+ Sites</span><span>Ufone</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">06</span><span class="ac-info"><span class="ac-name">Mobilink 3G Rollout (10K+ sites)</span><span class="ac-cat">Telecom · Mobilink</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Nationwide 3G rollout project covering large-scale deployment and coordination.</p><div class="ac-tags"><span>3G</span><span>10K+ Sites</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">07</span><span class="ac-info"><span class="ac-name">Zong 4G Rollout (10K+ sites)</span><span class="ac-cat">Telecom · Zong</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Large-scale 4G rollout project delivered across Pakistan.</p><div class="ac-tags"><span>4G</span><span>10K+ Sites</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">08</span><span class="ac-info"><span class="ac-name">Ufone USF Rollout (3K+ sites)</span><span class="ac-cat">Telecom · USF</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>USF rollout covering 3,000+ sites.</p><div class="ac-tags"><span>USF</span><span>3K+ Sites</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">09</span><span class="ac-info"><span class="ac-name">Ufone CBS</span><span class="ac-cat">Telecom · CBS</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Convergent billing system implementation project.</p><div class="ac-tags"><span>CBS</span><span>Billing</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">10</span><span class="ac-info"><span class="ac-name">Ufone CS &amp; PS Core Swap</span><span class="ac-cat">Telecom · Core</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Core network swap delivered as part of telecom modernization program.</p><div class="ac-tags"><span>CS Core</span><span>PS Core</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">11</span><span class="ac-info"><span class="ac-name">PTCL PDSN Deployment</span><span class="ac-cat">Telecom · PDSN</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>PDSN deployment supporting telecom data services and core rationalization.</p><div class="ac-tags"><span>PDSN</span><span>PTCL</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">12</span><span class="ac-info"><span class="ac-name">PS Core Consolidation</span><span class="ac-cat">Telecom · PS Core</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Packet core consolidation and architecture optimization project.</p><div class="ac-tags"><span>PS Core</span><span>Consolidation</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">13</span><span class="ac-info"><span class="ac-name">Unified Distribution Contract – Saudi Electricity Company</span><span class="ac-cat">Infrastructure · SEC</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Infrastructure delivery for Saudi Electricity Company in Saudi Arabia.</p><div class="ac-tags"><span>SEC</span><span>Infrastructure</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">14</span><span class="ac-info"><span class="ac-name">Street Lights Deployment &amp; O&amp;M – Jeddah, Hail, Moqq</span><span class="ac-cat">Municipal Infrastructure</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Street lights deployment and operations and maintenance contracts across multiple municipalities in KSA.</p><div class="ac-tags"><span>Jeddah</span><span>Hail</span><span>Moqq</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">15</span><span class="ac-info"><span class="ac-name">DGM, PDPL, Cybersecurity – ZATCA, SDAIA, TGA, HRDA, MOZN, MODON, Starlink</span><span class="ac-cat">Digital Governance</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>PMO oversight, governance, and delivery assurance across data governance, privacy, and cybersecurity transformation initiatives.</p><div class="ac-tags"><span>DGM</span><span>PDPL</span><span>Cybersecurity</span></div></div></div></div>
+
+      <div class="ac-item"><button class="ac-head"><span class="ac-num">16</span><span class="ac-info"><span class="ac-name">SEVEN Jazan (pre-sales, negotiations ~ contract award)</span><span class="ac-cat">KSA · SEVEN</span></span><span class="ac-arrow">+</span></button><div class="ac-body"><div class="ac-inner"><p>Led pre-sales, contract negotiations, vendor engagement, and contract award activities for SEVEN Jazan.</p><div class="ac-tags"><span>SEVEN</span><span>Pre-sales</span><span>Contract Negotiation</span></div></div></div></div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════ CERTIFICATIONS ═══════════════════════════════ -->
 <section id="certs">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Key Courses</p>
       <h2 class="sec-h2">Professional Development</h2>
     </div>
 
-    <div class="cert-group" data-anim="fade-up">
+    <div class="cert-group" data-reveal>
       <div class="cg-label">Leadership &amp; Project Management</div>
       <div class="cert-grid">
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📋</span><strong>PMP®</strong><em>PMI</em></div><div class="cfc-b"><strong>Project Management Professional</strong><span>PMI</span><em>Professional Certification</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>👥</span><strong>Senior Leadership</strong><em>Course</em></div><div class="cfc-b"><strong>Senior Leadership Development</strong><span>Leadership</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🎯</span><strong>Front Line</strong><em>Course</em></div><div class="cfc-b"><strong>ME Front Line Leadership Development</strong><span>Leadership</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🤝</span><strong>ME Cx</strong><em>Course</em></div><div class="cfc-b"><strong>ME Cx Training</strong><span>Customer Experience</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📈</span><strong>M.O.R.E.</strong><em>PMI</em></div><div class="cfc-b"><strong>PMI Essentials M.O.R.E. Maximizing Project Success</strong><span>PMI</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🤖</span><strong>PMI-CPMAI</strong><em>PMI</em></div><div class="cfc-b"><strong>Introduction PMI Certified Professional in Managing AI</strong><span>PMI</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>⚡</span><strong>Agile PM</strong><em>Course</em></div><div class="cfc-b"><strong>Agile Project Management: Leadership &amp; Core Skills</strong><span>Agile</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>⚠️</span><strong>PM Risk</strong><em>Course</em></div><div class="cfc-b"><strong>Project Management Foundations: Risk</strong><span>Project Management</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🗣️</span><strong>Presentation</strong><em>Course</em></div><div class="cfc-b"><strong>Presentation Skills</strong><span>Communication</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📡</span><strong>Level-4 PM</strong><em>Course</em></div><div class="cfc-b"><strong>ME Level-4 Project Management</strong><span>Project Management</span><em>Course</em></div></div></div>
+        <div class="cert-card"><span class="cc-icon">📋</span><strong>PMP®</strong><em>PMI — Professional Certification</em></div>
+        <div class="cert-card"><span class="cc-icon">👥</span><strong>Senior Leadership</strong><em>Development Course</em></div>
+        <div class="cert-card"><span class="cc-icon">🎯</span><strong>ME Front Line</strong><em>Leadership Development</em></div>
+        <div class="cert-card"><span class="cc-icon">🤝</span><strong>ME Cx Training</strong><em>Customer Experience</em></div>
+        <div class="cert-card"><span class="cc-icon">📈</span><strong>PMI M.O.R.E.</strong><em>Maximizing Project Success</em></div>
+        <div class="cert-card"><span class="cc-icon">🤖</span><strong>PMI-CPMAI</strong><em>Certified Professional in Managing AI</em></div>
+        <div class="cert-card"><span class="cc-icon">⚡</span><strong>Agile PM</strong><em>Leadership &amp; Core Skills</em></div>
+        <div class="cert-card"><span class="cc-icon">⚠️</span><strong>PM Risk</strong><em>Project Management Foundations: Risk</em></div>
+        <div class="cert-card"><span class="cc-icon">🗣️</span><strong>Presentation Skills</strong><em>Communication Course</em></div>
+        <div class="cert-card"><span class="cc-icon">📡</span><strong>ME Level-4 PM</strong><em>Project Management</em></div>
       </div>
     </div>
 
-    <div class="cert-group" data-anim="fade-up" style="--d:.1s">
+    <div class="cert-group" data-reveal style="--rv-d:.1s">
       <div class="cg-label">Data, Security &amp; Digital</div>
       <div class="cert-grid">
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🛡️</span><strong>Data Privacy</strong><em>Course</em></div><div class="cfc-b"><strong>Data Privacy &amp; Protection</strong><span>Digital Governance</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📈</span><strong>Google Data</strong><em>Course</em></div><div class="cfc-b"><strong>Foundations Data, Data Everywhere</strong><span>Data Analytics</span><em>Course</em></div></div></div>
+        <div class="cert-card"><span class="cc-icon">🛡️</span><strong>Data Privacy &amp; Protection</strong><em>Digital Governance</em></div>
+        <div class="cert-card"><span class="cc-icon">📊</span><strong>Google Data Analytics</strong><em>Foundations: Data, Data Everywhere</em></div>
       </div>
     </div>
 
-    <div class="cert-group" data-anim="fade-up" style="--d:.2s">
+    <div class="cert-group" data-reveal style="--rv-d:.2s">
       <div class="cg-label">Technical</div>
       <div class="cert-grid">
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🌐</span><strong>FTTx</strong><em>Course</em></div><div class="cfc-b"><strong>ME FTTx Design &amp; Deployment</strong><span>Huawei</span><em>Technical</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📶</span><strong>PS Core</strong><em>Course</em></div><div class="cfc-b"><strong>ME PS Core Design &amp; Deployment</strong><span>Huawei</span><em>Technical</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🔆</span><strong>OFC</strong><em>Course</em></div><div class="cfc-b"><strong>OFC Jointing &amp; Maintenance</strong><span>Technical</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📻</span><strong>Digital Radio</strong><em>Course</em></div><div class="cfc-b"><strong>Installation, administration &amp; maintenance of Digital Radio Systems (Harris, SRAL)</strong><span>Technical</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>☎️</span><strong>Nortel PABX</strong><em>Course</em></div><div class="cfc-b"><strong>Nortel PABX O&amp;M</strong><span>Technical</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🔊</span><strong>Conference Systems</strong><em>Course</em></div><div class="cfc-b"><strong>Sound / Conference System Installation &amp; Maintenance</strong><span>Technical</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>🖥️</span><strong>Cisco RAS</strong><em>Course</em></div><div class="cfc-b"><strong>Cisco Remote Access Server</strong><span>Technical</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>📲</span><strong>GSM Gateway</strong><em>Course</em></div><div class="cfc-b"><strong>Installation, O&amp;M of GSM Gateway</strong><span>Technical</span><em>Course</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>⚙️</span><strong>PME Cal.</strong><em>PAF</em></div><div class="cfc-b"><strong>PME “I” Level Calibration &amp; Maintenance</strong><span>Pakistan Air Force</span><em>Technical</em></div></div></div>
-        <div class="cert-fc"><div class="cfc-inner"><div class="cfc-f glass-card"><span>✈️</span><strong>F-100 Test Cell</strong><em>PAF</em></div><div class="cfc-b"><strong>Cal &amp; Maintenance of F-100 Engine Test Cell</strong><span>Pakistan Air Force</span><em>Technical</em></div></div></div>
+        <div class="cert-card"><span class="cc-icon">🌐</span><strong>ME FTTx</strong><em>Design &amp; Deployment · Huawei</em></div>
+        <div class="cert-card"><span class="cc-icon">📶</span><strong>ME PS Core</strong><em>Design &amp; Deployment · Huawei</em></div>
+        <div class="cert-card"><span class="cc-icon">🔆</span><strong>OFC Jointing</strong><em>&amp; Maintenance</em></div>
+        <div class="cert-card"><span class="cc-icon">📻</span><strong>Digital Radio Systems</strong><em>Harris, SRAL — Installation &amp; Maintenance</em></div>
+        <div class="cert-card"><span class="cc-icon">☎️</span><strong>Nortel PABX O&amp;M</strong><em>Technical Course</em></div>
+        <div class="cert-card"><span class="cc-icon">🔊</span><strong>Conference Systems</strong><em>Installation &amp; Maintenance</em></div>
+        <div class="cert-card"><span class="cc-icon">🖥️</span><strong>Cisco RAS</strong><em>Remote Access Server</em></div>
+        <div class="cert-card"><span class="cc-icon">📲</span><strong>GSM Gateway</strong><em>Installation &amp; O&amp;M</em></div>
+        <div class="cert-card"><span class="cc-icon">⚙️</span><strong>PME Calibration</strong><em>"I" Level — Pakistan Air Force</em></div>
+        <div class="cert-card"><span class="cc-icon">✈️</span><strong>F-100 Test Cell</strong><em>Cal &amp; Maintenance — PAF</em></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
 <section id="skills">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Capabilities</p>
       <h2 class="sec-h2">Skills &amp; Languages</h2>
     </div>
 
-    <div class="skills-grid">
-      <div class="skill-col" data-anim="fade-up" style="--d:.05s">
-        <h3 class="sk-cat">Technological Adeptness</h3>
-        <div class="sk-item"><div class="sk-top"><span>MS Project</span><span>95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Primavera P6</span><span>92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>MS Visio</span><span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Odoo ERP</span><span>87%</span></div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Oracle ERP</span><span>80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Power BI</span><span>82%</span></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div></div>
+    <div class="skills-wrap">
+      <div class="skill-col" data-reveal>
+        <h3 class="sk-h">Technological Adeptness</h3>
+        <div class="sk-item"><div class="sk-label"><span>MS Project</span><span>95%</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Primavera P6</span><span>92%</span></div><div class="sk-bar"><div class="sk-fill" data-w="92"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>MS Visio</span><span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Odoo ERP</span><span>87%</span></div><div class="sk-bar"><div class="sk-fill" data-w="87"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Oracle ERP</span><span>80%</span></div><div class="sk-bar"><div class="sk-fill" data-w="80"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Power BI</span><span>82%</span></div><div class="sk-bar"><div class="sk-fill" data-w="82"></div></div></div>
       </div>
 
-      <div class="skill-col" data-anim="fade-up" style="--d:.1s">
-        <h3 class="sk-cat">Core Competencies</h3>
-        <div class="sk-item"><div class="sk-top"><span>Program &amp; Portfolio Management</span><span>96%</span></div><div class="sk-bar"><div class="sk-fill" data-w="96"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>PMO Set-up &amp; Governance</span><span>96%</span></div><div class="sk-bar"><div class="sk-fill" data-w="96"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Agile Program Management</span><span>88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Strategic Contract Negotiation</span><span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Financial Governance &amp; P&amp;L</span><span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
-        <div class="sk-item"><div class="sk-top"><span>Vendor Management</span><span>89%</span></div><div class="sk-bar"><div class="sk-fill" data-w="89"></div></div></div>
+      <div class="skill-col" data-reveal style="--rv-d:.1s">
+        <h3 class="sk-h">Core Competencies</h3>
+        <div class="sk-item"><div class="sk-label"><span>Program &amp; Portfolio Management</span><span>96%</span></div><div class="sk-bar"><div class="sk-fill" data-w="96"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>PMO Set-up &amp; Governance</span><span>96%</span></div><div class="sk-bar"><div class="sk-fill" data-w="96"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Agile Program Management</span><span>88%</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Strategic Contract Negotiation</span><span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Financial Governance &amp; P&amp;L</span><span>90%</span></div><div class="sk-bar"><div class="sk-fill" data-w="90"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Vendor Management</span><span>89%</span></div><div class="sk-bar"><div class="sk-fill" data-w="89"></div></div></div>
       </div>
 
-      <div class="skill-col" data-anim="fade-up" style="--d:.15s">
-        <h3 class="sk-cat">Languages</h3>
-        <div class="lang-item"><div class="lang-top"><span>English</span><span class="lang-level">Fluent Professional</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
-        <div class="lang-item"><div class="lang-top"><span>Arabic</span><span class="lang-level">Basic Communication</span></div><div class="sk-bar"><div class="sk-fill" data-w="30"></div></div></div>
-        <div class="lang-item"><div class="lang-top"><span>Urdu</span><span class="lang-level">Fluent</span></div><div class="sk-bar"><div class="sk-fill" data-w="100"></div></div></div>
+      <div class="skill-col" data-reveal style="--rv-d:.15s">
+        <h3 class="sk-h">Languages</h3>
+        <div class="sk-item"><div class="sk-label"><span>English</span><span class="lang-level">Fluent Professional</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Arabic</span><span class="lang-level">Basic Communication</span></div><div class="sk-bar"><div class="sk-fill" data-w="30"></div></div></div>
+        <div class="sk-item"><div class="sk-label"><span>Urdu</span><span class="lang-level">Fluent</span></div><div class="sk-bar"><div class="sk-fill" data-w="100"></div></div></div>
 
-        <h3 class="sk-cat" style="margin-top:40px">Work Areas</h3>
+        <h3 class="sk-h" style="margin-top:2.5rem">Work Areas</h3>
         <div class="domain-cloud">
           <span>Infrastructure</span>
           <span>Telecom</span>
@@ -736,34 +752,36 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════ AWARDS ═══════════════════════════════ -->
 <section id="awards">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Awards</p>
       <h2 class="sec-h2">Recognition</h2>
     </div>
 
     <div class="awards-grid">
-      <div class="award-card glass-card"><span class="aw-icon">🥇</span><div class="aw-name">Huawei President Commendation</div><div class="aw-org">Twice</div></div>
-      <div class="award-card glass-card"><span class="aw-icon">⭐</span><div class="aw-name">ME Outstanding Individual Award</div><div class="aw-org">Huawei</div></div>
-      <div class="award-card glass-card"><span class="aw-icon">🏅</span><div class="aw-name">Excellent Project Manager Award</div><div class="aw-org">Twice</div></div>
-      <div class="award-card glass-card"><span class="aw-icon">💡</span><div class="aw-name">Excellent Technical Leader Award</div><div class="aw-org">Huawei</div></div>
-      <div class="award-card glass-card"><span class="aw-icon">🎓</span><div class="aw-name">Excellent Mentor Award</div><div class="aw-org">Huawei</div></div>
-      <div class="award-card glass-card"><span class="aw-icon">📡</span><div class="aw-name">Technical Expert PS Core</div><div class="aw-org">Huawei</div></div>
-      <div class="award-card glass-card"><span class="aw-icon">🔧</span><div class="aw-name">Excellent Engineer Award</div><div class="aw-org">Huawei</div></div>
+      <div class="award-card" data-reveal><span class="aw-ico">🥇</span><div class="aw-name">Huawei President Commendation</div><div class="aw-org">Twice Awarded</div></div>
+      <div class="award-card" data-reveal style="--rv-d:.05s"><span class="aw-ico">⭐</span><div class="aw-name">ME Outstanding Individual Award</div><div class="aw-org">Huawei</div></div>
+      <div class="award-card" data-reveal style="--rv-d:.10s"><span class="aw-ico">🏅</span><div class="aw-name">Excellent Project Manager Award</div><div class="aw-org">Twice Awarded</div></div>
+      <div class="award-card" data-reveal style="--rv-d:.15s"><span class="aw-ico">💡</span><div class="aw-name">Excellent Technical Leader Award</div><div class="aw-org">Huawei</div></div>
+      <div class="award-card" data-reveal style="--rv-d:.20s"><span class="aw-ico">🎓</span><div class="aw-name">Excellent Mentor Award</div><div class="aw-org">Huawei</div></div>
+      <div class="award-card" data-reveal style="--rv-d:.25s"><span class="aw-ico">📡</span><div class="aw-name">Technical Expert PS Core</div><div class="aw-org">Huawei</div></div>
+      <div class="award-card" data-reveal style="--rv-d:.30s"><span class="aw-ico">🔧</span><div class="aw-name">Excellent Engineer Award</div><div class="aw-org">Huawei</div></div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════ PERSONAL ═══════════════════════════════ -->
 <section id="personal">
   <div class="container">
-    <div class="sec-header" data-anim="fade-up">
+    <div class="sec-header" data-reveal>
       <p class="sec-eye">Personal Details</p>
       <h2 class="sec-h2">Profile</h2>
     </div>
 
     <div class="personal-grid">
-      <div class="personal-card glass-card">
+      <div class="personal-card" data-reveal>
         <div class="pc-icon">🎓</div>
         <div class="pc-title">Academics</div>
         <ul class="pc-list">
@@ -772,17 +790,17 @@
         </ul>
       </div>
 
-      <div class="personal-card glass-card">
+      <div class="personal-card" data-reveal style="--rv-d:.07s">
         <div class="pc-icon">⏱️</div>
         <div class="pc-title">Years of Experience</div>
         <ul class="pc-list">
-          <li>30+ years</li>
-          <li>20+ years in infrastructure developments in Govt, Telecom and Energy sectors</li>
+          <li>30+ years total</li>
+          <li>20+ years in infrastructure developments in Govt, Telecom &amp; Energy sectors</li>
           <li>10 years in avionics engineering (Calibration &amp; Maintenance of TMDEs)</li>
         </ul>
       </div>
 
-      <div class="personal-card glass-card">
+      <div class="personal-card" data-reveal style="--rv-d:.14s">
         <div class="pc-icon">🌍</div>
         <div class="pc-title">Work Location</div>
         <ul class="pc-list">
@@ -794,7 +812,7 @@
         </ul>
       </div>
 
-      <div class="personal-card glass-card">
+      <div class="personal-card" data-reveal style="--rv-d:.21s">
         <div class="pc-icon">✨</div>
         <div class="pc-title">Personal Attributes</div>
         <div class="pc-tags">
@@ -810,81 +828,75 @@
   </div>
 </section>
 
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
 <section id="contact">
-  <div class="contact-bg-glow"></div>
+  <div class="contact-glow" aria-hidden="true"></div>
   <div class="contact-inner">
-    <div class="ct-eyebrow" data-anim="fade-up">
-      <span class="ct-line-l"></span>
-      <p class="sec-eye">Contact</p>
-      <span class="ct-line-r"></span>
-    </div>
-
-    <h2 class="ct-heading" data-anim="fade-up" style="--d:.1s">Get in Touch</h2>
-
-    <p class="ct-sub" data-anim="fade-up" style="--d:.2s">
+    <p class="sec-eye" data-reveal>Contact</p>
+    <h2 class="ct-heading" data-reveal style="--rv-d:.08s">Let's Connect</h2>
+    <p class="ct-sub" data-reveal style="--rv-d:.16s">
       Open to roles in program management, PMO governance, infrastructure, telecom modernization, managed services, and business operations.
     </p>
 
-    <div class="ct-links" data-anim="fade-up" style="--d:.3s">
-      <a href="mailto:ikbalmalic@gmail.com" class="ct-link magnetic">
+    <div class="ct-links" data-reveal style="--rv-d:.24s">
+      <a href="mailto:ikbalmalic@gmail.com" class="ct-link" aria-label="Email Muhammad Iqbal">
         <div class="ctl-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M3 4h14a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.3"/>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <rect x="2" y="4" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.3"/>
             <path d="M2 5l8 6 8-6" stroke="currentColor" stroke-width="1.3"/>
           </svg>
         </div>
         <span>ikbalmalic@gmail.com</span>
       </a>
 
-      <a href="tel:+966533747222" class="ct-link magnetic">
+      <a href="tel:+966533747222" class="ct-link" aria-label="Call Muhammad Iqbal">
         <div class="ctl-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M6.5 3.5c.5 1 1 2 .5 3L5.5 8c1 2 3 4 5 5l1.5-1.5c1-.5 2 0 3 .5.5 1 .5 3-.5 3.5C13 16.5 7 15 4 11S3.5 4 4 3.5C4.5 2.5 6 2.5 6.5 3.5z" stroke="currentColor" stroke-width="1.3"/>
           </svg>
         </div>
         <span>+966 533 747 222</span>
       </a>
 
-      <a href="https://www.linkedin.com/in/icmalik" target="_blank" rel="noopener" class="ct-link magnetic">
+      <a href="https://www.linkedin.com/in/icmalik" target="_blank" rel="noopener noreferrer" class="ct-link" aria-label="LinkedIn profile">
         <div class="ctl-icon ctl-li">in</div>
-        <span>www.linkedin.com/in/icmalik</span>
+        <span>linkedin.com/in/icmalik</span>
       </a>
     </div>
 
-    <a href="mailto:ikbalmalic@gmail.com" class="btn-primary magnetic btn-large" data-anim="fade-up" style="--d:.4s">
+    <a href="mailto:m.owais.iqbal@gmail.com" class="btn-primary btn-xl" data-reveal style="--rv-d:.32s">
       <span>Send a Message</span>
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
         <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="ft-left">
-    <div class="ft-name">Muhammad Iqbal, PMP®</div>
-    <div class="ft-sub">Program Management | Infrastructure &amp; Telecom Networks Modernization | PMO Governance | Managed Services | Business Operations</div>
+  <div class="ft-inner">
+    <div class="ft-brand">
+      <span class="ft-name">Muhammad Iqbal, PMP®</span>
+      <span class="ft-tagline">Program Management · Infrastructure · Telecom · PMO Governance · Managed Services</span>
+    </div>
     <div class="ft-copy">© 2025 Muhammad Iqbal. All rights reserved.</div>
-  </div>
-  <div class="ft-right">
-    <a href="#hero" class="ft-top magnetic" aria-label="Back to top">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
+    <a href="#hero" class="ft-top" aria-label="Back to top">↑</a>
   </div>
 </footer>
 
+<!-- BACK TO TOP -->
 <button class="back-top" id="backTop" aria-label="Back to top">
-  <svg class="bt-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-    <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg class="bt-ring-svg" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+    <circle cx="24" cy="24" r="20" class="bt-ring-track"/>
+    <circle cx="24" cy="24" r="20" class="bt-ring-fill" id="btRing"/>
   </svg>
-  <svg class="bt-ring" viewBox="0 0 44 44">
-    <circle cx="22" cy="22" r="19" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-dasharray="120" stroke-dashoffset="120" id="btRing"/>
+  <svg class="bt-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+    <path d="M9 14V4M4.5 8.5L9 4l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
 </button>
 
-<div class="particle-container" id="particleContainer"></div>
+<div id="particleContainer" aria-hidden="true"></div>
 
 <script src="app.js"></script>
 </body>
