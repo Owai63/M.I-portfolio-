@@ -92,14 +92,4 @@ Loaded from Google Fonts and Fontshare — no local font files required:
 
 ---
 
-## ✦ Contact
-
-**Muhammad Iqbal, PMP®**  
-PMO & Operations Manager · Riyadh, Saudi Arabia  
-✉ ikbalmalic@gmail.com  
-📱 +966 533 747 222  
-🔗 [linkedin.com/in/icmalik](https://linkedin.com/in/icmalik)
-
----
-
 *Portfolio built and maintained by Owais. Editor and site architecture custom-built — no templates.*
