@@ -36,7 +36,7 @@ function revealHero() {
 }
 
 /* ══ 2. TYPEWRITER (morphing roles) ══ */
-const PHRASES = [
+const PHRASES = (window.PHRASES && window.PHRASES.length) ? window.PHRASES : [
   'PMO & Operations Manager',
   'Program Delivery Executive',
   'Digital Transformation Leader',
