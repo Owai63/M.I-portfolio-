@@ -1,0 +1,303 @@
+{
+  "hero": {
+    "name_first": "Muhammad",
+    "name_last": "Iqbal",
+    "credentials": "PMP®",
+    "bio": "40+ years of experience in program management across infrastructure, telecom, and digital consultancy sectors with strong capability in strategic planning, forecasting, budgeting, operational excellence, resource planning, stakeholder management, and pre-sales.",
+    "roles": [
+      "PMO & Operations Manager",
+      "Program Delivery Executive",
+      "Digital Transformation Leader",
+      "ISO 9001 · 27001 Champion",
+      "Saudi Vision 2030 Enabler",
+      "Multi-Million Dollar Portfolio Lead"
+    ],
+    "badges": [
+      "📍 Riyadh, KSA",
+      "🏆 PMP®",
+      "🛂 Transferable Iqama",
+      "🌍 KSA & GCC Ready"
+    ],
+    "kpis": [
+      {
+        "icon": "🏅",
+        "title": "Huawei President Commendation",
+        "sub": "Twice Awarded"
+      },
+      {
+        "icon": "💰",
+        "title": "USD 30M–65M",
+        "sub": "Annual Portfolios Directed"
+      },
+      {
+        "icon": "👥",
+        "title": "1,200+ Professionals",
+        "sub": "Teams Led"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "count": 30,
+      "prefix": "",
+      "suffix": "+",
+      "label": "Years Experience",
+      "pct": 100
+    },
+    {
+      "count": 65,
+      "prefix": "$",
+      "suffix": "M",
+      "label": "Annual Portfolio Scale",
+      "pct": 88
+    },
+    {
+      "count": 1200,
+      "prefix": "",
+      "suffix": "+",
+      "label": "Professionals Led",
+      "pct": 92
+    },
+    {
+      "count": 16,
+      "prefix": "",
+      "suffix": "",
+      "label": "Signature Projects",
+      "pct": 80
+    },
+    {
+      "count": 68,
+      "prefix": "SAR ",
+      "suffix": "M",
+      "label": "SEVEN Contract Value",
+      "pct": 72
+    },
+    {
+      "count": 85,
+      "prefix": "",
+      "suffix": "%",
+      "label": "Reduction in Client Complaints",
+      "pct": 85
+    }
+  ],
+  "marquee": [
+    "PROGRAM & PORTFOLIO MANAGEMENT",
+    "PMO SET-UP & GOVERNANCE",
+    "AGILE PROGRAM MANAGEMENT",
+    "FINANCIAL GOVERNANCE & P&L",
+    "STAKEHOLDER & CLIENT ENGAGEMENT",
+    "VENDOR MANAGEMENT",
+    "MANAGED SERVICES",
+    "NETWORK MERGERS & CONSOLIDATIONS"
+  ],
+  "about": {
+    "quote": "I bring dedication to achieve the business goals by utilizing my in-depth knowledge and 30+ years' experience in program management of infrastructure, telecom and digital consultancy sectors along with business acumen for strategic planning, forecasting, budgeting and analysis, operational excellence, resource planning, stakeholder management, pre-sales and sales.",
+    "paragraphs": [
+      "In the last 15+ years, I have delivered large-scale and high-value infrastructure projects for Saudi Electricity Company, municipalities across KSA, and rollout, transformation, swap, and merger projects for telecom operators in the Middle East including Etisalat, Mobily, China Mobile, and Veon Group.",
+      "More recently, I have provided PMO functional oversight, governance, and delivery assurance for digital governance and transformation consultancy programs for Saudi organizations including ZATCA, HRDA, SEC, TGA, NDMO, SDAIA, and GSTAT."
+    ],
+    "competencies": [
+      "Program & Portfolio Management",
+      "Agile Program Management",
+      "PMO Set-up & Governance",
+      "Strategic Contract Negotiation",
+      "Critical Patch Analysis",
+      "Financial Governance & P&L",
+      "Stakeholder Engagement",
+      "Vendor Management",
+      "Managed Services",
+      "Network Mergers",
+      "Digital Transformation",
+      "ISO 9001 · ISO 27001"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Tamayouz Business Services, Riyadh KSA",
+      "role": "PMO & Operations Manager",
+      "period": "Feb 2025 – Present",
+      "is_current": true,
+      "dot_type": "active",
+      "description": "Leading PMO and operational governance for consultancy programs worth SAR 40M annually focused on data governance, cybersecurity, and digital transformation across major Saudi government and private entities.",
+      "bullets": [
+        "Established and led the Enterprise PMO with standardized project management methodologies, governance frameworks, and delivery controls",
+        "Implemented performance management systems, KPIs, and executive dashboards",
+        "Strengthened portfolio risk management, quality assurance, and compliance aligned with SDAIA, NDMO, GDPR, ISO 9001, and ISO 27001"
+      ],
+      "tags": [
+        "SAR 40M / Year",
+        "Enterprise PMO",
+        "ISO 9001",
+        "ISO 27001",
+        "Odoo ERP"
+      ]
+    },
+    {
+      "company": "Pakistan Air Force",
+      "role": "Manager Telecommunication Network / PME Calibration & Maintenance Specialist",
+      "period": "Oct 1993 – Jul 2009",
+      "is_current": false,
+      "dot_type": "blue",
+      "description": "Served in telecom network management and calibration and maintenance of TMDEs.",
+      "bullets": [
+        "Manager Telecommunication Network: Jan 2004 – Jul 2009",
+        "PME Calibration & Maintenance Specialist: Oct 1993 – Dec 2003"
+      ],
+      "tags": [
+        "Telecom",
+        "TMDE",
+        "Calibration",
+        "Pakistan Air Force"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "num": "01",
+      "val": "SAR 67M",
+      "title": "SEC & Municipalities",
+      "region": "KSA",
+      "back": "Won SAR 67M infrastructure projects in Saudi Arabia.",
+      "icon": "🏗️"
+    },
+    {
+      "num": "02",
+      "val": "SAR 68M",
+      "title": "SEVEN Jazan",
+      "region": "PIF – KSA",
+      "back": "Secured SAR 68M turnkey ICT, Security, and AV contract for SEVEN Jazan.",
+      "icon": "🖥️"
+    }
+  ],
+  "projects": [
+    {
+      "num": "01",
+      "name": "PTCL IP MPLS Swap (Nationwide)",
+      "cat": "Telecom",
+      "tag": "PTCL",
+      "desc": "Strategic network transformation replacing legacy Cisco and Juniper platforms.",
+      "tags": [
+        "IP MPLS",
+        "Nationwide",
+        "PTCL"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "group": "Leadership & Project Management",
+      "items": [
+        {
+          "icon": "📋",
+          "title": "PMP®",
+          "detail": "PMI — Professional Certification"
+        },
+        {
+          "icon": "👥",
+          "title": "Senior Leadership",
+          "detail": "Development Course"
+        }
+      ]
+    },
+    {
+      "group": "Technical",
+      "items": [
+        {
+          "icon": "🌐",
+          "title": "ME FTTx",
+          "detail": "Design & Deployment · Huawei"
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "tech": [
+      {
+        "name": "MS Project",
+        "pct": 95
+      },
+      {
+        "name": "Primavera P6",
+        "pct": 92
+      },
+      {
+        "name": "Odoo ERP",
+        "pct": 87
+      }
+    ],
+    "core": [
+      {
+        "name": "Program & Portfolio Management",
+        "pct": 96
+      },
+      {
+        "name": "PMO Set-up & Governance",
+        "pct": 96
+      }
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "Fluent Professional",
+        "pct": 95
+      },
+      {
+        "name": "Arabic",
+        "level": "Basic Communication",
+        "pct": 30
+      },
+      {
+        "name": "Urdu",
+        "level": "Fluent",
+        "pct": 100
+      }
+    ],
+    "domains": [
+      "Infrastructure",
+      "Telecom",
+      "PMO Governance",
+      "Managed Services",
+      "Digital Consultancy"
+    ]
+  },
+  "awards": [
+    {
+      "icon": "🥇",
+      "name": "Huawei President Commendation",
+      "org": "Twice Awarded"
+    },
+    {
+      "icon": "⭐",
+      "name": "ME Outstanding Individual Award",
+      "org": "Huawei"
+    }
+  ],
+  "personal": {
+    "academics": [
+      "Bachelor of Technology",
+      "Project Management Professional (PMI)"
+    ],
+    "experience_detail": [
+      "30+ years total",
+      "20+ years in infrastructure developments in Govt, Telecom & Energy sectors",
+      "10 years in avionics engineering (Calibration & Maintenance of TMDEs)"
+    ],
+    "location": [
+      "Riyadh, Saudi Arabia",
+      "Nationality: Pakistani",
+      "Valid Transferable Iqama"
+    ],
+    "attributes": [
+      "Enablement & Delegation",
+      "Coaching & Mentoring",
+      "Quick learner & Adept to Change",
+      "Team Player"
+    ]
+  },
+  "contact": {
+    "email": "ikbalmalic@gmail.com",
+    "phone": "+966 533 747 222",
+    "linkedin": "linkedin.com/in/icmalik",
+    "subtitle": "Open to roles in program management, PMO governance, infrastructure, telecom modernization, managed services, and business operations."
+  }
+}
