@@ -63,7 +63,7 @@
     {
       "count": 1,
       "prefix": "$",
-      "suffix": "Billion+",
+      "suffix": "Bn+",
       "label": "Sales & Delivery Portfolio",
       "pct": 80
     },
