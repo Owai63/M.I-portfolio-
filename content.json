@@ -28,7 +28,7 @@
       },
       {
         "icon": "💰",
-        "title": "USD 30M–65M",
+        "title": "USD 150M",
         "sub": "Annual Portfolios Directed"
       },
       {
@@ -69,7 +69,7 @@
     },
     {
       "count": 68,
-      "prefix": "SAR ",
+      "prefix": "SAR",
       "suffix": "M",
       "label": "SEVEN Contract Value",
       "pct": 72
