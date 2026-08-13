@@ -47,7 +47,7 @@
       "pct": 100
     },
     {
-      "count": 65,
+      "count": 150,
       "prefix": "$",
       "suffix": "M",
       "label": "Annual Portfolio Scale",
@@ -68,17 +68,17 @@
       "pct": 80
     },
     {
-      "count": 68,
+      "count": 717,
       "prefix": "SAR",
-      "suffix": "M",
-      "label": "SEVEN Contract Value",
+      "suffix": "M+",
+      "label": "Program Delivered in KSA - 2023 to date",
       "pct": 72
     },
     {
-      "count": 85,
+      "count": 13,
       "prefix": "",
       "suffix": "%",
-      "label": "Reduction in Client Complaints",
+      "label": "P&L uplift",
       "pct": 85
     }
   ],
